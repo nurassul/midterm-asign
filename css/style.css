@@ -1,0 +1,46 @@
+body { 
+    background-color: #fafbf9; 
+    color: #26352e; 
+    font-family: 'Poppins', sans-serif;
+}
+.about-panel {
+    background-color: #eef3ed;
+}
+
+.avatar { 
+    width: 64px; 
+    height: 64px; 
+    background-color: #dce8da; 
+    color: #235c40; 
+    flex-shrink: 0; 
+}
+.project-image { 
+    height: 210px; 
+    object-fit: cover; 
+}
+.nature-image { 
+    height: clamp(280px, 38vw, 440px); 
+    object-fit: cover; 
+}
+.carousel-item::after { 
+    content: ""; 
+    position: absolute; 
+    inset: 0; 
+    background: linear-gradient(transparent 30%, rgba(0, 0, 0, .8)); 
+    pointer-events: none; 
+}
+.carousel-caption { 
+    z-index: 1; 
+}
+.nav-link { 
+    color: #4b5750; 
+}
+.nav-link:hover, .nav-link:focus { 
+    color: #146c43; 
+}
+.card { 
+    border-color: #dfe5de; 
+}
+.card-group > [class*="col-"] {
+    flex-grow: 0; 
+}
